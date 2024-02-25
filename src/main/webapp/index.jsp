@@ -19,5 +19,7 @@
     <a href="mainservlet">Main Servlet</a>
 <br/>
     <a href="mainJsp.jsp">Main JSP Page</a>
+<br/>
+    <a href="mappingJsp.jsp">JSP Servlet</a>
 </body>
 </html>

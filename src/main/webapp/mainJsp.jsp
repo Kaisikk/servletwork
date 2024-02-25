@@ -20,17 +20,31 @@
         String str = "Date now : " + dateNow;
         %>
         <%= str %>
-
     </p>
     <p>
-
         <%
             for(int i = 0; i < 10; i++){
                out.println(i);
             }
         %>
-
     </p>
+
+    <p>
+        <%@ page import="com.kaisikk.servletwork.logic.SimpleLogicClass" %>
+
+        <% SimpleLogicClass simpleClass = new SimpleLogicClass(); %>
+
+        <%=
+        simpleClass.getString()
+        %>
+    </p>
+<p>
+    <%@ page import="java.util.Date" %>
+
+    <%=
+    new Date()
+    %>
+</p>
 
 </body>
 </html>

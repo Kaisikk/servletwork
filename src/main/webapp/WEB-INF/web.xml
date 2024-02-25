@@ -9,8 +9,18 @@
         <servlet-class>com.kaisikk.servletwork.servlets.MainServlet</servlet-class>
     </servlet>
     
+    <servlet>
+        <servlet-name>jspServlet</servlet-name>
+        <jsp-file>/mappingJsp.jsp</jsp-file>
+    </servlet>
+    
     <servlet-mapping>
         <servlet-name>mainServlet</servlet-name>
         <url-pattern>/mainservlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>jspServlet</servlet-name>
+        <url-pattern>/jspservlet</url-pattern>
     </servlet-mapping>
 </web-app>
