@@ -8,6 +8,11 @@
         <servlet-name>mainServlet</servlet-name>
         <servlet-class>com.kaisikk.servletwork.servlets.MainServlet</servlet-class>
     </servlet>
+
+    <servlet>
+        <servlet-name>sessionServlet</servlet-name>
+        <servlet-class>com.kaisikk.servletwork.servlets.SessionServlet</servlet-class>
+    </servlet>
     
     <servlet>
         <servlet-name>jspServlet</servlet-name>
@@ -22,6 +27,11 @@
     <servlet-mapping>
         <servlet-name>mainServlet</servlet-name>
         <url-pattern>/mainservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>sessionServlet</servlet-name>
+        <url-pattern>/sessionservlet</url-pattern>
     </servlet-mapping>
     
     <servlet-mapping>

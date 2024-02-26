@@ -21,5 +21,7 @@
     <a href="mainJsp.jsp">Main JSP Page</a>
 <br/>
     <a href="mappingJsp.jsp">JSP Servlet</a>
+<br/>
+    <a href="sessionservlet">Session Servlet</a>
 </body>
 </html>
