@@ -17,11 +17,19 @@ public class MainServlet extends HttpServlet {
     }
 
     public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
 
+        String name = request.getParameter("name");
+        String surname = request.getParameter("surname");
+        if(name == null){
+            name = "anonim";
+        }
+        if(surname == null){
+            surname = "anonimovich";
+        }
+        response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
+        out.println("<h1> Hello, " + name + " " + surname + "</h1>");
         out.println("</body></html>");
     }
 

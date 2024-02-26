@@ -13,5 +13,16 @@
 <body>
 <h1>Simple JSP servlet (mapped in web.xml)</h1>
 
+<p>
+
+    <%
+        String name = request.getParameter("name");
+
+    %>
+    <%= "Hello, " + name %>
+
+</p>
+
+
 </body>
 </html>
