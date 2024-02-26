@@ -1,6 +1,8 @@
 package com.kaisikk.servletwork.servlets;
 
 import java.io.*;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
 /**
@@ -16,7 +18,18 @@ public class MainServlet extends HttpServlet {
         message = "Hi!";
     }
 
-    public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
+    public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws IOException, ServletException {
+
+        String redirect = request.getParameter("redirect");
+
+        if(redirect != null) {
+
+            if("forward".equals(redirect)){
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/forward");
+                dispatcher.forward(request, response);
+            } else
+                response.sendRedirect("https://youareanidiot.cc/");
+        }
 
         String name = request.getParameter("name");
         String surname = request.getParameter("surname");

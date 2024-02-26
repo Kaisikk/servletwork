@@ -13,6 +13,11 @@
         <servlet-name>jspServlet</servlet-name>
         <jsp-file>/mappingJsp.jsp</jsp-file>
     </servlet>
+
+    <servlet>
+        <servlet-name>forwardServlet</servlet-name>
+        <jsp-file>/forward.jsp</jsp-file>
+    </servlet>
     
     <servlet-mapping>
         <servlet-name>mainServlet</servlet-name>
@@ -22,5 +27,10 @@
     <servlet-mapping>
         <servlet-name>jspServlet</servlet-name>
         <url-pattern>/jspservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>forwardServlet</servlet-name>
+        <url-pattern>/forward</url-pattern>
     </servlet-mapping>
 </web-app>
