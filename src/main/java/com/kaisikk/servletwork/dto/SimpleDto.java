@@ -1,5 +1,8 @@
 package com.kaisikk.servletwork.dto;
 
+/**
+ * @author Kaisikk
+ */
 public class SimpleDto {
 
     private String firstName;

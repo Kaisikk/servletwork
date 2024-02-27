@@ -13,6 +13,21 @@
         <servlet-name>sessionServlet</servlet-name>
         <servlet-class>com.kaisikk.servletwork.servlets.SessionServlet</servlet-class>
     </servlet>
+
+    <servlet>
+        <servlet-name>setCookies</servlet-name>
+        <servlet-class>com.kaisikk.servletwork.servlets.SetCookies</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>deleteCookies</servlet-name>
+        <servlet-class>com.kaisikk.servletwork.servlets.DeleteCookies</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>getCookies</servlet-name>
+        <servlet-class>com.kaisikk.servletwork.servlets.GetCookies</servlet-class>
+    </servlet>
     
     <servlet>
         <servlet-name>jspServlet</servlet-name>
@@ -32,6 +47,21 @@
     <servlet-mapping>
         <servlet-name>sessionServlet</servlet-name>
         <url-pattern>/sessionservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>setCookies</servlet-name>
+        <url-pattern>/setcookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>deleteCookies</servlet-name>
+        <url-pattern>/deletecookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>getCookies</servlet-name>
+        <url-pattern>/getcookies</url-pattern>
     </servlet-mapping>
     
     <servlet-mapping>
