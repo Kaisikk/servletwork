@@ -23,5 +23,7 @@
     <a href="mappingJsp.jsp">JSP Servlet</a>
 <br/>
     <a href="sessionservlet">Session Servlet</a>
+<br/>
+    <a href="dbservlet">DbServlet</a>
 </body>
 </html>

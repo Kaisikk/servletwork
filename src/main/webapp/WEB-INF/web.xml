@@ -28,6 +28,11 @@
         <servlet-name>getCookies</servlet-name>
         <servlet-class>com.kaisikk.servletwork.servlets.GetCookies</servlet-class>
     </servlet>
+
+    <servlet>
+        <servlet-name>dbServlet</servlet-name>
+        <servlet-class>com.kaisikk.servletwork.servlets.DbServlet</servlet-class>
+    </servlet>
     
     <servlet>
         <servlet-name>jspServlet</servlet-name>
@@ -72,5 +77,10 @@
     <servlet-mapping>
         <servlet-name>forwardServlet</servlet-name>
         <url-pattern>/forward</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>dbServlet</servlet-name>
+        <url-pattern>/dbservlet</url-pattern>
     </servlet-mapping>
 </web-app>
